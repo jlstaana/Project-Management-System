@@ -106,7 +106,7 @@ Before opening a PR, ensure the app builds and tests pass.
 
 ## License
 
-Include your project license here (e.g., MIT). If you want, I can add a sample `LICENSE` file.
+This project is licensed under the MIT License — see the `LICENSE` file for details. Copyright (c) 2025 jlstaana.
 
 ## Contact / Support
 
