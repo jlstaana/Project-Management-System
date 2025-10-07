@@ -1,0 +1,127 @@
+.file-management {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file-management h1 {
+    text-align: center;
+}
+
+.file-list {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.file-list-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    background-color: #f8f9fa;
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding: 12px;
+}
+
+.file-items {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.file-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: white;
+    transition: background-color 0.2s;
+}
+
+.file-item:hover {
+    background-color: #f8f9fa;
+}
+
+.file-cell {
+    padding: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    padding: 4px 12px;
+    font-size: 0.9rem;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.file-item span.access-level {
+    padding: 2px 5px; /* Minimal padding */
+    border-radius: 3px; /* Slightly rounded corners */
+    color: #fff;
+    font-weight: bold;
+    display: inline-block; /* Ensures the background color wraps tightly around the text */
+    width: auto; /* Ensures the width matches the text content */
+    text-align: center;
+    margin: 0; /* Removes auto-centering */
+}
+
+.file-item span.access-level.restricted {
+    background-color: #f44336; /* Red for restricted */
+}
+
+span.access-level.restricted, span.access-level.everyone {
+    max-width: 150px; /* Fixed width for restricted */
+    margin-right: 170px; /* Margin to the right */
+    margin-bottom: 10px;
+}
+
+.file-item span.access-level.everyone {
+    background-color: #4caf50; /* Green for everyone */
+}
+
+@media (max-width: 768px) {
+    .file-management {
+        padding: 10px;
+    }
+
+    .file-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .file-item span {
+        margin-bottom: 10px;
+    }
+
+    .file-list-header {
+        display: none; 
+    }
+}

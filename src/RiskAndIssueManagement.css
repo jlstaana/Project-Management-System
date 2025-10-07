@@ -1,0 +1,115 @@
+.risk-issue-management {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.item-title {
+    font-weight: bold;
+    flex: 1;
+}
+
+.item-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    min-width: 80px;
+    height: auto;
+    background-color: #cab9b9; /* Light gray background */
+}
+
+/* Dynamic background colors for status */
+.item-status.identified {
+    background-color: #ffcccc; /* Light red */
+    color: #990000; /* Dark red */
+}
+
+.item-status.resolved {
+    background-color: #ccffcc; /* Light green */
+    color: #006600; /* Dark green */
+}
+
+.item-status.open {
+    background-color: #f8f8a6; /* Light yellow */
+    color: #999900; /* Dark yellow */
+}
+
+.item-status.in-progress {
+    background-color: #cce5ff; /* Light blue */
+    color: #004085; /* Dark blue */
+}
+
+.item-actions {
+    flex: 1.5;
+    text-align: right;
+}
+
+.item-actions button {
+    margin-left: 5px;
+}
+
+.success-toast-message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.item-assigned{
+    padding: 3px ;
+    background-color: rgb(209, 209, 209);
+}
